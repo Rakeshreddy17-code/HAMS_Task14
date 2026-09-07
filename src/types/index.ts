@@ -20,24 +20,15 @@ export interface Service {
   icon: string;
 }
 
-export interface AppointmentForm {
-  patientName: string;
-  email: string;
-  phone: string;
-  doctor: string;
-  date: string;
-  time: string;
-  reason: string;
-}
-
 export interface Appointment {
   id: number;
+  doctorId: number;
+  doctorName: string;
   patientName: string;
   email: string;
   phone: string;
-  doctor: string;
   date: string;
   time: string;
   reason: string;
-  status: string;
+  status: "Upcoming" | "Completed" | "Cancelled";
 }
