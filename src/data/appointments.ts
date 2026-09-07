@@ -1,0 +1,40 @@
+import type { Appointment } from "../types";
+
+export const initialAppointments: Appointment[] = [
+  {
+    id: 1,
+    doctorId: 1,
+    doctorName: "Dr. Ananya Rao",
+    patientName: "Rahul Kumar",
+    email: "rahul@example.com",
+    phone: "9876543210",
+    date: "2026-09-10",
+    time: "10:30 AM",
+    reason: "Regular heart health consultation",
+    status: "Upcoming",
+  },
+  {
+    id: 2,
+    doctorId: 3,
+    doctorName: "Dr. Priya Reddy",
+    patientName: "Sneha Reddy",
+    email: "sneha@example.com",
+    phone: "9876501234",
+    date: "2026-09-12",
+    time: "02:00 PM",
+    reason: "Skin consultation",
+    status: "Upcoming",
+  },
+  {
+    id: 3,
+    doctorId: 2,
+    doctorName: "Dr. Rahul Sharma",
+    patientName: "Arjun Rao",
+    email: "arjun@example.com",
+    phone: "9988776655",
+    date: "2026-08-20",
+    time: "11:00 AM",
+    reason: "Headache consultation",
+    status: "Completed",
+  },
+];
